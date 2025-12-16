@@ -20,3 +20,18 @@ html,body{
 input{
     display: block;
 }
+.card{
+    max-width: 300px;
+    margin-top : 40px;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    border: 2px solid black;
+}
+.profile{
+    height: 50px;
+    width:  50px;
+    background-color: red;
+    border-radius: 50%;
+
+}
