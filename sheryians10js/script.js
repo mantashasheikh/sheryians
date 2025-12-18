@@ -9,7 +9,7 @@ btn.addEventListener("click" , function(){
 
 c.addEventListener("click" , function(){
     console.log("c clicked")
-})
+},true)
 
 
 b.addEventListener("click" , function(){
@@ -19,7 +19,7 @@ b.addEventListener("click" , function(){
 
 a.addEventListener("click" , function(){
     console.log("a clicked")
-})
+} ,true)
 
 
 
