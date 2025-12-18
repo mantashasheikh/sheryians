@@ -4,9 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form validation</title>
+    <style>
+        small{
+            color: red;
+        }
+        #hide{
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    <input type="text" placeholder="name">
+    <input id="name" type="text" placeholder="name">
+    <div id="hide">
+        <br>
+        <small>write more than two characters</small>
+    </div>
     <br><br>
     <input type="email" placeholder="email">
     <br><br>
