@@ -65,4 +65,7 @@ button {
 button:hover {
     background: #0056b3;
 }
+#resultMessage {
+    padding-left:80px ;
+}
 
