@@ -9,4 +9,8 @@ form.addEventListener("submit" , function(dets){
     }else{
        hide.style.display = "none"
     }
+    
+    const regex =  /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/
+    let ans = regex.test("mantasha@gmail.com")
+    console.log(ans)
 })
