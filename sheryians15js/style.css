@@ -40,7 +40,7 @@ body {
     width: 0%;
     background: linear-gradient(90deg, #4caf50, #2e7d32);
     border-radius: 10px;
-    transition: width 0.3s ease;
+    
 }
 
 .progress-text {
