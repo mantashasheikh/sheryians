@@ -31,3 +31,11 @@ const user = [
     }
 ]
 
+function showUser(arr){
+    arr.forEach(function(user){
+
+    })
+
+   
+}
+showUser(user)
