@@ -1,4 +1,4 @@
-const user = [
+const users = [
     { 
         name : "Amisha Rathore",
         pic : "https://img.freepik.com/free-photo/woman-beach-with-her-baby-enjoying-sunset_52683-144131.jpg?size=626&ext=jpg",
@@ -68,6 +68,7 @@ function showUser(arr){
          card.appendChild(content);
 
          // append card to body or any container
+         
          document.querySelector(".cards").appendChild(card);
          // OR: document.querySelector(".container").appendChild(card);
 
@@ -76,4 +77,16 @@ function showUser(arr){
 
    
 }
-showUser(user)
+showUser(users)
+
+
+let inp = document.querySelector("input")
+inp.addEventListener("input" , function(){
+    let newUser = users.filter((user)=>{
+        return user.name.startsWith(inp.value)
+    })
+
+
+    document.querySelector(".cards").innerHTML = ""
+    showUser(newUser)
+})
