@@ -35,29 +35,29 @@ function showUser(arr){
     arr.forEach(function(user){
         // create main card
          const card = document.createElement("div");
-         card.className = "card";
+         card.classList.add("card")  ;
 
          // create image
          const img = document.createElement("img");
-         img.src = "https://imgv3.fotor.com/images/slider-image/A-clear-image-of-a-woman-wearing-red-sharpened-by-Fotors-image-sharpener.jpg";
-         img.alt = "girl image";
-         img.className = "bg-img";
+         img.src = user.pic;
+         img.classList.add ("bg-img");
 
          // create blurred layer
          const blurredLayer = document.createElement("div");
-         blurredLayer.className = "blurred-layer";
+         blurredLayer.style.backgroundColor = user.pic
+         blurredLayer.classList.add("blurred-layer") ;
 
          // create content wrapper
          const content = document.createElement("div");
-         content.className = "content";
+         content.classList.add("content") ;
 
          // create heading
          const h3 = document.createElement("h3");
-         h3.textContent = "user 123";
+         h3.textContent = user.name;
 
          // create paragraph
          const p = document.createElement("p");
-         p.textContent ="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quia enim et dolore atque .";
+         p.textContent = user.bio;
 
          // append elements
          content.appendChild(h3);
