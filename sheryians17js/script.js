@@ -44,7 +44,7 @@ function showUser(arr){
 
          // create blurred layer
          const blurredLayer = document.createElement("div");
-         blurredLayer.style.backgroundColor = user.pic
+         blurredLayer.style.backgroundImage = `url(${user.pic})`
          blurredLayer.classList.add("blurred-layer") ;
 
          // create content wrapper
@@ -68,7 +68,7 @@ function showUser(arr){
          card.appendChild(content);
 
          // append card to body or any container
-         document.body.appendChild(card);
+         document.querySelector(".cards").appendChild(card);
          // OR: document.querySelector(".container").appendChild(card);
 
 
