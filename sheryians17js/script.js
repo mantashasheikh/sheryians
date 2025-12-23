@@ -82,11 +82,10 @@ showUser(users)
 
 let inp = document.querySelector("input")
 inp.addEventListener("input" , function(){
-    let newUser = users.filter((user)=>{
+   let newUser = users.filter((user)=>{
         return user.name.startsWith(inp.value)
     })
-
-
     document.querySelector(".cards").innerHTML = ""
     showUser(newUser)
+    
 })
