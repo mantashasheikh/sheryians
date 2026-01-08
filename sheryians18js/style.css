@@ -1,0 +1,19 @@
+*{
+    background-color: black;
+
+
+}
+.parent{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: inline-block;
+}
+.parent div{
+    height: 100%;
+    width : 100%;
+    background-color: gray;
+    color: white;
+    
+    
+}
